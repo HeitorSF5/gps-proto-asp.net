@@ -12,6 +12,7 @@ Este é um protótipo para o processo seletivo técnico, onde é necessario cons
     - Um exemplo para teste é o CNPJ do Mercado Livre, que usei para teste: `03361252000134`
 
 📃 To-Do List:
+  - Implementar CORS para fetch em AJAX
   - Implementar uma pagina nova com as informações recebidas após uma resposta positiva da API (empresa encontrada)
     - Esta página deve conter um botão de `Salvar` para gravar os dados localmente
   - Implementar mensagem de "Erro" quando não houver empresa encontrada
