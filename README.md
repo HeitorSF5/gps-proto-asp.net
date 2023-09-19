@@ -21,6 +21,7 @@ Este é um protótipo para o processo seletivo técnico, onde é necessario cons
   - Estilizar as páginas da aplicação
   - Opção de buscar multiplos CNPJs de uma vez
     - Obs: A API tem um limite de 3 requisições por minuto
+  - Desfazer de arquivos não utilizados (resquicios de conexão com MySQL por exemplo)
 
 📌 Observações:
   - Esse é o primeiro projeto que uso ASP.NET. Minha experiência passada com C# era num escopo de desenvolvimento de games.
