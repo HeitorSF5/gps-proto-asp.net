@@ -7,13 +7,40 @@
 
 <h1>Buscar Empresa</h1>
 
-@using (Html.BeginForm("ActionName", "ControllerName", FormMethod.Get))
+@using (Html.BeginForm("ActionName", "ControllerName", FormMethod.Get, new {id = "buscarForm"}))
 {
     <div class="form-group">
         @Html.LabelFor(model => model.CNPJ)
         @Html.TextBoxFor(model => model.CNPJ, new { @class = "form-control"})
-        @Html.ValidationMessageFor(model => model.CNPJ, "string 3", new { @class = "text-danger"})
+        @Html.ValidationMessageFor(model => model.CNPJ, "Digite o CNPJ", new { @class = "text-danger"})
     </div>
 
-    <button type="submit">Buscar</button>
+    <button type="submit" id="buscarButton">Buscar</button>
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#buscarForm").submit(function (event) {
+                event.preventDefault();
+
+                var cnpj = $("#CNPJ").val();
+                var apiUrl = "https://receitaws.com.br/v1/cnpj/" + cnpj;
+
+                // Fetch por Ajax
+                $.ajax({
+                    url: apiUrl,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    error: function (error) {
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
 }
