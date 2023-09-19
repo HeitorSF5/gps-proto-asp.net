@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<DatabaseContext>(options => options.UseMySQL("conn"));
-    // options.UseSqlServer(builder.Configuration.GetConnectionString("conn")));
+// builder.Services.AddDbContext<DatabaseContext>(options => options.UseMySQL("conn"));
+builder.Services.AddCors();
 
 var app = builder.Build();
 
@@ -18,6 +18,13 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseCors(builder =>
+{
+    builder.WithOrigins("https://localhost:7056")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

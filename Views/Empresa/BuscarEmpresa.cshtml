@@ -7,7 +7,7 @@
 
 <h1>Buscar Empresa</h1>
 
-@using (Html.BeginForm("ActionName", "ControllerName", FormMethod.Get, new {id = "buscarForm"}))
+@using (Html.BeginForm("GetEmpresa", "Empresa", FormMethod.Get, new {id = "buscarForm"}))
 {
     <div class="form-group">
         @Html.LabelFor(model => model.CNPJ)
@@ -17,6 +17,8 @@
 
     <button type="submit" id="buscarButton">Buscar</button>
 }
+
+<div id="response-container"></div>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

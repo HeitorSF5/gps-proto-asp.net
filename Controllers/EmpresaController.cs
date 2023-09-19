@@ -4,12 +4,14 @@ namespace GrupoGPS_Proto.Controllers
 {
     public class EmpresaController : Controller
     {
-        //private readonly IHttpClientFactory _httpClientFactory;
+        // private readonly HttpClient httpClient;
 
         //public EmpresaController(IHttpClientFactory httpClientFactory)
         //{
-        //    _httpClientFactory = httpClientFactory;
+        //    httpClient = httpClientFactory.CreateClient();
         //}
+
+
         public IActionResult Index()
         {
             ViewBag.greeting = "Welcome to die";
@@ -22,18 +24,19 @@ namespace GrupoGPS_Proto.Controllers
         }
 
         //[HttpGet]
-        //public async Task<IActionResult> BuscarEmpresa(EmpresaViewModel model)
+        //public async Task<IActionResult> GetEmpresa(string cnpj)
         //{
-        //    string consultaAPI = "https://receitaws.com.br/v1/cnpj/{cnpj}";
-        //    return View();
+        //    var apiUrl = $"https://receitaws.com.br/v1/cnpj/{cnpj}";
+        //    var response = await httpClient.GetAsync(apiUrl);
+
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        var data = await response.Content.ReadAsStringAsync();
+        //        return Ok(data);
+        //    }
+
+        //    return BadRequest();
 
         //}
-
-        // Metodo para gravar as informações encontradas por BuscarEmpresa()
-        [HttpPost]
-        public IActionResult CreateEmpresa()
-        {
-            return View();
-        }
     }
 }
