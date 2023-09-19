@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "ck4PyuHT5HvAOrzL+mbYHrrOINTHLJgq3bdfzv8dwa4=",
+  "Source": "GrupoGPS-Proto",
+  "BasePath": "_content/GrupoGPS-Proto",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GrupoGPS-Proto\\wwwroot",
+      "Source": "GrupoGPS-Proto",
+      "ContentRoot": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\wwwroot\\",
+      "BasePath": "_content/GrupoGPS-Proto",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\wwwroot\\favicon.ico",
+      "SourceId": "GrupoGPS-Proto",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\wwwroot\\",
+      "BasePath": "_content/GrupoGPS-Proto",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

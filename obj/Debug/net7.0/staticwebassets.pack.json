@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GrupoGPS-Proto.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GrupoGPS-Proto.props",
+      "PackagePath": "build\\GrupoGPS-Proto.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GrupoGPS-Proto.props",
+      "PackagePath": "buildMultiTargeting\\GrupoGPS-Proto.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GrupoGPS-Proto.props",
+      "PackagePath": "buildTransitive\\GrupoGPS-Proto.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
