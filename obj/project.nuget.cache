@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V4jQu+gbp+d1MTDhvXHToquVmh8epMI8YjS8W2R7l0+dcHw4kGTXrcMG/fdnIWJPPqdSIDkBRK40Tnvu5ubi6g==",
+  "dgSpecHash": "vl1G7Qxbv0bswwJNW1l+i3kroaMwKSUQeV12wiwTzmR0rftcqRrl7/TI8TAU7JWZf8pP4OcI5Twkk23TLTxOKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\GrupoGPS-Proto.csproj",
+  "projectFilePath": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GPS-Proto for GitHub\\gps-proto-asp.net\\GrupoGPS-Proto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kiwi\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Kiwi\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

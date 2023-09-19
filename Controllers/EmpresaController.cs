@@ -16,11 +16,10 @@ namespace GrupoGPS_Proto.Controllers
             return View();
         }
 
-        //public IActionResult BuscarEmpresa()
-        //{
-        //    var model = new EmpresaViewModel();
-        //    return View(model);
-        //}
+        public IActionResult BuscarEmpresa()
+        {
+            return View();
+        }
 
         //[HttpGet]
         //public async Task<IActionResult> BuscarEmpresa(EmpresaViewModel model)

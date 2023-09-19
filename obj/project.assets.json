@@ -11380,11 +11380,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\GrupoGPS-Proto.csproj",
+      "projectUniqueName": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GPS-Proto for GitHub\\gps-proto-asp.net\\GrupoGPS-Proto.csproj",
       "projectName": "GrupoGPS-Proto",
-      "projectPath": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\GrupoGPS-Proto.csproj",
+      "projectPath": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GPS-Proto for GitHub\\gps-proto-asp.net\\GrupoGPS-Proto.csproj",
       "packagesPath": "C:\\Users\\Kiwi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GrupoGPS-Proto\\obj\\",
+      "outputPath": "C:\\Users\\Kiwi\\Documents\\Projects\\C#\\Grupo GPS\\GPS-Proto for GitHub\\gps-proto-asp.net\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kiwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
