@@ -25,6 +25,7 @@ Este é um protótipo para o processo seletivo técnico, onde é necessario cons
   - Desfazer de arquivos não utilizados (resquicios de conexão com MySQL por exemplo)
 
 📌 Observações:
+  - Projeto foi inicializado com Framework 7.0 e template ASP.NET Core MVC
   - Esse é o primeiro projeto que uso ASP.NET. Minha experiência passada com C# era num escopo de desenvolvimento de games.
   - A URL da App será *bem* rudimentar. Eu tenho preferencia de nomear as rotas mais concisamente, como: `/empresa/{id}` mas não está em minha prioridades comparado às funcionalidades
   - Originalmente eu tinha o âmbito de armazenar as informações vindas pela API em um Banco de Dados MySQL. Isso incluiria a configuração para conexão ao mesmo pelo e migrações para gerar e popular um BD local. Infelizmente passei *muito* tempo tentando fazer essa conexão funcionar e decidi que não valeria à pena dado o prazo do projeto. Optei por simplificar e "mockar" esse aspecto e salvar os dados vindos dentro de um arquivo local (csv ou json)

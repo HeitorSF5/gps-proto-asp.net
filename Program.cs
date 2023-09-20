@@ -3,11 +3,35 @@ using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
 // builder.Services.AddDbContext<DatabaseContext>(options => options.UseMySQL("conn"));
-builder.Services.AddCors();
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins("https://localhost:7056/")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
+//builder.Services.AddCors(options =>
+//{
+//    options.AddDefaultPolicy(
+//        builder =>
+//        {
+//            builder
+//                .AllowAnyOrigin()
+//                .AllowAnyHeader()
+//                .AllowAnyMethod();
+//        });
+//});
 
 var app = builder.Build();
 
@@ -19,22 +43,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseCors(builder =>
-{
-    builder.WithOrigins("https://localhost:7056")
-        .AllowAnyHeader()
-        .AllowAnyMethod();
-});
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
+//app.UseCors();
+app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Empresa}/{action=BuscarEmpresa}/{id?}");
-
 app.Run();
